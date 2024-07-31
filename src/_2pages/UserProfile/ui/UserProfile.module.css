@@ -1,0 +1,252 @@
+.container__header {
+    background: linear-gradient(45deg, #1c1c1c 0%, #3a72f5 100%);
+    height: 639px;
+    width: 1179px;
+    border-top-left-radius: 135px;
+    border-top-right-radius: 135px;
+    padding-top: 169px;
+    position: absolute;
+    z-index: 1;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 110px;
+}
+
+.btn_menu span {
+    background-color: #FFFFFF;
+    height: 6px;
+    border-radius: 25px;
+    width: 54px;
+    position: relative;
+}
+
+.btn_menu span::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 18px;
+    background-color: #FFFFFF;
+    height: 6px;
+    border-radius: 25px;
+    width: 54px;
+}
+
+.btn_menu span::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 18px;
+    background-color: #FFFFFF;
+    height: 6px;
+    border-radius: 25px;
+    width: 54px;
+}
+
+.btn_menu {
+    width: 82px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__main {
+    color: white;
+    position: relative;
+    padding: 28px 63px 0px 63px;
+    z-index: 10;
+    margin-top: 570px;
+    background-color: #0C1317;
+    width: 1179px;
+    height: 1986px;
+    border-top-left-radius: 66px;
+    border-top-right-radius: 66px;
+}
+
+.container__profile_stats {
+    display: flex;
+    gap: 54px;
+}
+
+.container_user__plug {
+    width: 302px;
+    position: relative;
+}
+
+.container_user {
+    width: 302px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: -151px;
+}
+
+.user_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 302px;
+    height: 302px;
+    border-radius: 50%;
+}
+
+.user_tag_name {
+    color: #3A72F5;
+    font-size: 53px;
+    margin-top: 22px;
+    font-weight: 500;
+}
+
+.user_photo__canva {
+    position: absolute;
+    height: 356px;
+    width: 356px;
+}
+
+.user_photo__canva circle {
+    stroke: #3A72F5;
+    stroke-width: 17px;
+    stroke-linecap: round;
+    stroke-dasharray: 1062;
+    stroke-dashoffset: 622;
+    transform-origin: 50%;
+    transform: rotate(-165deg)
+}
+
+
+
+/* denis moros */
+.container_user__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.user_name h1 {
+    font-size: 67px;
+}
+
+.container_stats {
+    display: flex;
+    gap: 82px;
+}
+
+.container_stats p {
+    color: #FFFFFF80;
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.container_stats h2 {
+    font-size: 67px;
+    font-weight: 600;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user_about {
+    color: #FFFFFF80;
+    margin-top: 25px;
+    font-size: 39px;
+    font-weight: 500;
+}
+
+.edit_profile {
+    padding-top: 41px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn_edit_profile {
+    color: #0C1317;
+    font-size: 46px;
+    font-weight: 500;
+    background-color: #3A72F5;
+    width: 574px;
+    height: 86px;
+    border-radius: 43px;
+}
+
+.btn_add_profile {
+    color: white;
+    font-size: 86px;
+    font-weight: 500;
+    user-select: none;
+}
+
+/* посты */
+.container_posts_1 {
+    padding-top: 57px;
+    display: flex;
+}
+
+.user_photo_1 {
+    transform: scale(0.5);
+}
+
+.container_user_1 {
+    top: 0;
+    position: relative;
+    transform: scale(0.59);
+}
+
+.posts1 {
+    height: 791px;
+    width: 791px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    flex-wrap: wrap;
+}
+
+.container_1row>div:first-child {
+    width: 522px;
+    height: 522px;
+    border-radius: 22px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, rgba(28, 28, 28, 1) 0%, rgba(58, 114, 245, 1) 100%);
+}
+
+.container_1row {
+    display: flex;
+    gap: 16px;
+}
+
+.container_1row__primary {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.container_1row__primary>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    width: 253px;
+    height: 253px;
+    background: linear-gradient(135deg, rgba(28, 28, 28, 1) 0%, rgba(58, 114, 245, 1) 100%);
+
+}
+
+.posts1>div:nth-child(n+2) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 22px;
+    width: 253px;
+    height: 253px;
+    background: linear-gradient(135deg, rgba(28, 28, 28, 1) 0%, rgba(58, 114, 245, 1) 100%);
+}

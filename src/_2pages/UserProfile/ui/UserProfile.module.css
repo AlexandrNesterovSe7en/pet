@@ -167,9 +167,9 @@
 }
 
 .edit_profile {
-    padding-top: 19px;
     display: flex;
-    justify-content: space-between;
+    padding-top: 19px;
+    justify-content: space-around;
     align-items: center;
     margin-bottom: 38px;
 }
@@ -179,7 +179,7 @@
     font-size: 15px;
     font-weight: 500;
     background-color: #3A72F5;
-    width: 198px;
+    width: 160px;
     height: 25px;
     border-radius: 13px;
 }
@@ -218,11 +218,11 @@
     display: grid;
     grid-template-columns: repeat(3, clamp(5.5rem, 25.556vw - 1.368rem, 11.25rem));
     grid-auto-rows: clamp(5.5rem, 25.556vw - 1.368rem, 11.25rem);
-    grid-gap: 10px;
+    grid-gap: 5px;
 }
 
 .posts1 div {
-    border-radius: 22px;
+    border-radius: 6px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -236,7 +236,11 @@
     grid-row-end: 3;
 }
 
-@media screen and (max-width: 410px) {
+@media screen and (max-width: 380px) {
+    .edit_profile {
+        justify-content: space-between;
+    }
+
     .item1 {
         grid-column-start: 1;
         grid-column-end: 4;
@@ -245,11 +249,10 @@
     }
 
     .posts1 div {
-        border-radius: 11px;
+        border-radius: 6px;
     }
 
     .posts1 {
-        grid-gap: 7px;
         grid-template-columns: repeat(3, clamp(3.75rem, 35vw - 3.25rem, 5.5rem));
         grid-auto-rows: clamp(3.75rem, 35vw - 3.25rem, 5.5rem);
     }

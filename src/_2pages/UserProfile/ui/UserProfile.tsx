@@ -1,5 +1,7 @@
+import ArrowsRightFill from '../../../../public/Arrows/RightFill/ui/ArrowsRightFill'
 import ArrowLeft from '../../../../public/Arrows/ui/ArrowLeft'
 import AvatarUser from '../../../../public/User/PhotoAvatar/ui/Photo'
+import WaveSound from '../../../../public/Wave/Sound/ui/WaveSound'
 import cl from './UserProfile.module.css'
 
 function UserProfile() {
@@ -23,13 +25,13 @@ function UserProfile() {
                                 <div className={cl.user_photo}>
                                     <svg className={cl.user_photo__canva}>
                                         <circle
-                                            cx={178}
-                                            cy={178}
-                                            r={169}
+                                            cx={48}
+                                            cy={48}
+                                            r={45}
                                             fill="none"
                                         ></circle>
                                     </svg>
-                                    <AvatarUser />
+                                    <AvatarUser className={cl.avatarUser} />
                                 </div>
                                 <div className={cl.user_tag_name}>@Morsh</div>
                             </div>
@@ -64,36 +66,135 @@ function UserProfile() {
                         </button>
                         <button className={cl.btn_add_profile}>+</button>
                     </div>
-                    <div className={cl.container_posts_1}>
-                        <div
-                            className={
-                                cl.container_user + ' ' + cl.container_user_1
-                            }
-                        >
-                            <div className={cl.user_photo}>
-                                <svg className={cl.user_photo__canva}>
-                                    <circle
-                                        cx={178}
-                                        cy={178}
-                                        r={169}
-                                        fill="none"
-                                    ></circle>
-                                </svg>
-                                <AvatarUser />
-                            </div>
-                            <div className={cl.user_tag_name}>@Morsh</div>
-                        </div>
-                        <div className={cl.posts1}>
-                            <div className={cl.container_1row}>
-                                <div>1</div>
-                                <div className={cl.container_1row__primary}>
+                    <div className={cl.posts}>
+                        <div className={cl.containerPosts}>
+                            <div className={cl.container_posts_1}>
+                                <div className={cl.container_user__plug}>
+                                    <div
+                                        className={
+                                            cl.container_user +
+                                            ' ' +
+                                            cl.container_user_1
+                                        }
+                                    >
+                                        <div className={cl.user_photo}>
+                                            <svg
+                                                className={cl.user_photo__canva}
+                                            >
+                                                <circle
+                                                    cx={48}
+                                                    cy={48}
+                                                    r={45}
+                                                    fill="none"
+                                                ></circle>
+                                            </svg>
+                                            <AvatarUser
+                                                className={cl.avatarUser}
+                                            />
+                                        </div>
+                                        <div className={cl.user_tag_name}>
+                                            @Morsh
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={cl.posts1}>
+                                    <div className={cl.item1}>1</div>
                                     <div>2</div>
                                     <div>3</div>
+                                    <div>4</div>
+                                    <div>5</div>
+                                    <div>6</div>
                                 </div>
                             </div>
-                            <div>4</div>
-                            <div>5</div>
-                            <div>6</div>
+                            <div
+                                className={
+                                    cl.container_posts_1 + ' ' + cl.center
+                                }
+                            >
+                                <div className={cl.container_user__plug}>
+                                    <div
+                                        className={
+                                            cl.container_user +
+                                            ' ' +
+                                            cl.container_user_1
+                                        }
+                                    >
+                                        <div className={cl.user_photo}>
+                                            <svg
+                                                className={cl.user_photo__canva}
+                                            >
+                                                <circle
+                                                    cx={48}
+                                                    cy={48}
+                                                    r={45}
+                                                    fill="none"
+                                                ></circle>
+                                            </svg>
+                                            <AvatarUser
+                                                className={cl.avatarUser}
+                                            />
+                                        </div>
+                                        <div className={cl.user_tag_name}>
+                                            @Morsh
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className={cl.text1}>
+                                    a single man in possession of a good
+                                    fortune, must be.
+                                </div>
+                                <button className={cl.btn_play}>
+                                    <div>
+                                        <ArrowsRightFill
+                                            className={cl.ArrowsRightFill}
+                                        />
+                                    </div>
+                                </button>
+                            </div>
+                            <div
+                                className={
+                                    cl.container_posts_1 + ' ' + cl.center
+                                }
+                            >
+                                <div className={cl.container_user__plug}>
+                                    <div
+                                        className={
+                                            cl.container_user +
+                                            ' ' +
+                                            cl.container_user_1
+                                        }
+                                    >
+                                        <div className={cl.user_photo}>
+                                            <svg
+                                                className={cl.user_photo__canva}
+                                            >
+                                                <circle
+                                                    cx={48}
+                                                    cy={48}
+                                                    r={45}
+                                                    fill="none"
+                                                ></circle>
+                                            </svg>
+                                            <AvatarUser
+                                                className={cl.avatarUser}
+                                            />
+                                        </div>
+                                        <div className={cl.user_tag_name}>
+                                            @Morsh
+                                        </div>
+                                    </div>
+                                </div>
+                                <button className={cl.btn_play}>
+                                    <div>
+                                        <ArrowsRightFill
+                                            className={cl.ArrowsRightFill}
+                                        />
+                                    </div>
+                                    <div className={cl.alert}>
+                                        <WaveSound className={cl.WaveSound} />
+                                    </div>
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>

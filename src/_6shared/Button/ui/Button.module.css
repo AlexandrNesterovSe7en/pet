@@ -1,0 +1,30 @@
+.primary {
+    color: #0C1317;
+    font-size: 15px;
+    font-weight: 500;
+    background-color: #3A72F5;
+    width: 160px;
+    height: 25px;
+    border-radius: 13px;
+}
+
+.transparent {
+    color: white;
+}
+
+.play>div:first-child {
+    background-color: #3A72F5;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play {
+    padding: 7px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}

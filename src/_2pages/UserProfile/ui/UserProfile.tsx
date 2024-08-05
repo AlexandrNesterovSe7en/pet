@@ -1,3 +1,4 @@
+import Button from '@/_6shared/Button'
 import ArrowsRightFill from '../../../../public/Arrows/RightFill/ui/ArrowsRightFill'
 import ArrowLeft from '../../../../public/Arrows/ui/ArrowLeft'
 import AvatarUser from '../../../../public/User/PhotoAvatar/ui/Photo'
@@ -9,12 +10,12 @@ function UserProfile() {
         <>
             <div className={cl.container__header}>
                 <div className={cl.header}>
-                    <button className={cl.btn_back}>
+                    <Button className={cl.btn_back} _type="transparent">
                         <ArrowLeft />
-                    </button>
-                    <button className={cl.btn_menu}>
+                    </Button>
+                    <Button className={cl.btn_menu} _type="transparent">
                         <span></span>
-                    </button>
+                    </Button>
                 </div>
             </div>
             <div className={cl.container__main}>
@@ -61,10 +62,13 @@ function UserProfile() {
                         man in possession of a good fortune.
                     </div>
                     <div className={cl.edit_profile}>
-                        <button className={cl.btn_edit_profile}>
-                            Edit profile
-                        </button>
-                        <button className={cl.btn_add_profile}>+</button>
+                        <Button>Edit profile</Button>
+                        <Button
+                            className={cl.btn_add_profile}
+                            _type="transparent"
+                        >
+                            +
+                        </Button>
                     </div>
                     <div className={cl.posts}>
                         <div className={cl.containerPosts}>
@@ -143,13 +147,7 @@ function UserProfile() {
                                     a single man in possession of a good
                                     fortune, must be.
                                 </div>
-                                <button className={cl.btn_play}>
-                                    <div>
-                                        <ArrowsRightFill
-                                            className={cl.ArrowsRightFill}
-                                        />
-                                    </div>
-                                </button>
+                                <Button _type="play" _svg="ArrowRightFill" />
                             </div>
                             <div
                                 className={
@@ -184,16 +182,11 @@ function UserProfile() {
                                         </div>
                                     </div>
                                 </div>
-                                <button className={cl.btn_play}>
-                                    <div>
-                                        <ArrowsRightFill
-                                            className={cl.ArrowsRightFill}
-                                        />
-                                    </div>
+                                <Button _type="play" _svg="ArrowRightFill">
                                     <div className={cl.alert}>
                                         <WaveSound className={cl.WaveSound} />
                                     </div>
-                                </button>
+                                </Button>
                             </div>
                         </div>
                     </div>

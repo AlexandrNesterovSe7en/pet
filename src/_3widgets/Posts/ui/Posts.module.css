@@ -1,0 +1,12 @@
+.posts_container {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 15px;
+}
+
+.posts_wrapper {
+    gap: 19px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}

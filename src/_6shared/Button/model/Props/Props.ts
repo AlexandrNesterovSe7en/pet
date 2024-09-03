@@ -10,7 +10,7 @@ type ButtonOnlySVGProps = {
 type ButtonOwnProps = {
     _type?: TypesProps
 }
-export type SVGiconsProps = 'ArrowRightFill'
+export type SVGiconsProps = 'ArrowRightFill' | 'ArrowLeft'
 
 export type ButtonProps = {
     _svg?: SVGiconsProps

@@ -20,3 +20,7 @@ button {
   border: none;
   cursor: pointer;
 }
+
+:root {
+  --accent-color: #3A72F5;
+}

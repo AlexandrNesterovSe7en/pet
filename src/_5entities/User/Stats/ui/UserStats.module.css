@@ -1,0 +1,40 @@
+.container__profile_stats {
+    display: flex;
+    gap: clamp(1.125rem, 3.564vw + 0.167rem, 3.375rem);
+}
+
+.avatar {
+    top: -25px;
+}
+
+.container_user__stats {
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+}
+
+.user_name h1 {
+    font-size: 21px;
+}
+
+.container_stats {
+    display: flex;
+    gap: clamp(0.875rem, 2.574vw + 0.183rem, 2.5rem);
+}
+
+.container_stats p {
+    color: #FFFFFF80;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.container_stats h2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

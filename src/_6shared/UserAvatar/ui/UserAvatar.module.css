@@ -1,0 +1,63 @@
+.container {
+    min-width: 75px;
+    position: relative;
+    color: var(--accent-color);
+}
+
+.primary {
+    position: relative;
+    color: #86898b;
+}
+
+.second {
+    position: absolute;
+    color: var(--accent-color);
+
+}
+
+.container_user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.user_photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+.user_photo__canva {
+    position: absolute;
+    height: 96px;
+    width: 96px;
+}
+
+.user_photo__canva circle {
+    stroke: var(--accent-color);
+    stroke-width: 5px;
+    stroke-linecap: round;
+    stroke-dasharray: 284;
+    stroke-dashoffset: 167;
+    transform-origin: 50%;
+    transform: rotate(-165deg)
+}
+
+.user_tag_name {
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: 14px;
+    text-align: center;
+}
+
+.avatarUser {
+    transform: scale(0.5);
+}
+
+.small {
+    transform: scale(0.8);
+}

@@ -13,6 +13,7 @@ function Posts({ posts }: Props) {
                             images={item.images}
                             audios={item.audios}
                             texts={item.texts}
+                            plugg={item.plugg}
                         />
                     )
                 })}
